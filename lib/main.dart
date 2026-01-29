@@ -31,7 +31,17 @@ class MainApp extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(child: Text('App bar'))
+      body: Container(
+        padding: EdgeInsets.only(top: 25.0),
+        margin: EdgeInsets.symmetric(horizontal: 20.0),
+        width: double.infinity,
+        height: 150,
+        color: Colors.green,
+        child: Container(
+          width: 300,
+          height: 100,
+          color: Colors.red,)
+        ),
       ),
     );
   }
