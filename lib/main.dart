@@ -13,11 +13,11 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
+          backgroundColor: Colors.black,
           elevation: 3,
-          title: Text('New App Bar '),
           leading: Icon(
-            Icons.favorite,
-            color: Colors.red,
+            Icons.arrow_back,
+            color: Colors.white,
             size: 24.0,
             semanticLabel: "Text to announce in accessibility modes",
           ),
@@ -98,9 +98,7 @@ class MainApp extends StatelessWidget {
                       style: TextStyle(color: Colors.white, fontSize: 12)
                     ),
                   ),
-
-
-                ],)
+                ],),
               ],
             ),
           ),
@@ -111,6 +109,26 @@ class MainApp extends StatelessWidget {
             decoration: BoxDecoration(
               color: Color.fromARGB(255, 40, 40, 40),
               borderRadius: BorderRadius.circular(30),
+            ),
+            child:Column(
+              Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Sleep",
+                      style: TextStyle(color: Colors.white, fontSize: 30)
+                    ),
+                    Icon(Icons.chevron_right, color: Colors.white, size: 30),
+                  ],
+                ),
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Timer",
+                  style: TextStyle(color: Colors.white, fontSize: 30)
+                ),
+                Icon(Icons.chevron_right, color: Colors.white, size: 30),
+              ],
             ),
           ),
           Container(
